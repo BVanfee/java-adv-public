@@ -61,6 +61,7 @@ public class Building implements Comparable<Building> {
         buildings.add(new Building("Kossuth utca 6.", 276, 2));
         buildings.add(new Building("Petőfi utca 96.", 1347, 13));
         buildings.add(new Building("Rákóczi utca 32.", 53, 1));
+        buildings.add(new Building("Konkrét utca 32.", 98, 1));
         buildings.add(new Building("Bezerédi utca 54.", 698, 4));
 
         System.out.println(buildings);

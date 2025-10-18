@@ -12,6 +12,7 @@ public class Outer {
     }
 
     public String saySomething() {
+
         return new Inner().sayHello();
     }
 }

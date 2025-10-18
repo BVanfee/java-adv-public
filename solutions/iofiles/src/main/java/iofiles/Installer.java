@@ -17,13 +17,15 @@ public class Installer {
         if (!Files.exists(target) || !Files.isDirectory(target)) {
             throw new IllegalArgumentException("The given directory doesn't exist");
         }
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/install/install.txt")))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(this.getClass().
+                getResourceAsStream("/install/install.txt")))) {
             String line;
             while ((line = br.readLine()) != null) {
                 if (line.endsWith("/")) {
                     Files.createDirectories(target.resolve(line));
                 } else {
-                    Files.copy(this.getClass().getResourceAsStream(SOURCE_DIRECTORY + line), target.resolve(line), StandardCopyOption.REPLACE_EXISTING);
+                    Files.copy(this.getClass().getResourceAsStream(SOURCE_DIRECTORY + line),
+                            target.resolve(line), StandardCopyOption.REPLACE_EXISTING);
                 }
             }
         } catch (IOException ioe) {

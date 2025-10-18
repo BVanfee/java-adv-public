@@ -11,6 +11,7 @@ public class School {
         Student secondStudent = new Student("Kiss József", 122);
         Student thirdStudent = new Student("Molnár Irén", 144);
         Student fourthStudent = new Student("Álmos Árpád", 118);
+        Student seventhStudent = new Student("Álmos Hajnalka", 118);
         Student fifthStudent = new Student("Illyés Borbála", 138);
         Student sixthStudent = new Student("Órás Eleonóra", 160);
         students.add(firstStudent);
@@ -19,6 +20,7 @@ public class School {
         students.add(fourthStudent);
         students.add(fifthStudent);
         students.add(sixthStudent);
+        students.add(seventhStudent);
 
         System.out.println(students);
 
@@ -29,6 +31,7 @@ public class School {
         studentsOrder.put(fourthStudent.getName(), fourthStudent.getHeight());
         studentsOrder.put(fifthStudent.getName(), fifthStudent.getHeight());
         studentsOrder.put(sixthStudent.getName(), sixthStudent.getHeight());
+        studentsOrder.put(seventhStudent.getName(), seventhStudent.getHeight());
 
         System.out.println(studentsOrder);
     }
